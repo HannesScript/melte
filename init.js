@@ -6,4 +6,4 @@ function item(item, href, src ) {
     document.head.appendChild(i);
 }
 
-item('link', 'https://cdn.jsdelivr.net/npm/melte@version/src/css/utility.css');
+item('link', 'https://cdn.jsdelivr.net/npm/melte@latest/src/css/utility.css');
