@@ -1,0 +1,24 @@
+/* border radius classes */
+.br-16 {
+    border-radius: 16px;
+}
+
+.br-32 {
+    border-radius: 32px;
+}
+
+.br-4 {
+    border-radius: 4px;
+}
+
+.br-8 {
+    border-radius: 8px;
+}
+
+.br-64 {
+    border-radius: 64px;
+}
+
+.round {
+    border-radius: 1399239849893849824982px;
+}

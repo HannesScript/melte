@@ -1,0 +1,33 @@
+/* Shadows */
+.shadow-sm {
+    box-shadow: rgb(0, 0, 0, 0.8) 0.2rem 0.2rem 0.5rem;
+}
+
+.shadow-md {
+    box-shadow: rgb(0, 0, 0, 0.8) 0.4rem 0.4rem 0.5rem;
+}
+
+.shadow-lg {
+    box-shadow: rgb(0, 0, 0, 0.8) 0.8rem 0.8rem 0.5rem;
+}
+
+.shadow-xl {
+    box-shadow: rgb(0, 0, 0, 0.8) 1.5rem 1.5rem 0.5rem;
+}
+
+/* text shadows */
+.text-shadow-sm {
+    text-shadow: rgb(0, 0, 0, 1) 0.2rem 0.2rem 0.225rem;
+}
+
+.text-shadow-md {
+    text-shadow: rgb(0, 0, 0, 1) 0.4rem 0.4rem 0.225rem;
+}
+
+.text-shadow-lg {
+    text-shadow: rgb(0, 0, 0, 1) 0.8rem 0.8rem 0.225rem;
+}
+
+.text-shadow-xl {
+    text-shadow: rgb(0, 0, 0, 1) 1.5rem 1.5rem 0.225rem;
+}

@@ -1,0 +1,16 @@
+/* Blurs */
+.blur-sm {
+    filter: blur(0.15rem);
+}
+
+.blur-md {
+    filter: blur(0.5rem);
+}
+
+.blur-lg {
+    filter: blur(1rem);
+}
+
+.blur-xl {
+    filter: blur(2rem);
+}

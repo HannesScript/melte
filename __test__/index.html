@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).on("pagecreate","body",function(){
+  $("p").swipe(() => {
+    $("span").text("Swipe detected!");
+  });                       
+});
+</script>
+</head>
+<body>
+    <p>Swipe this text or in the box below.</p>
+    <p style="border:1px solid black;height:200px;width:200px;"></p>
+    <p><span style="color:red"></span></p>
+</body>
+</html>
