@@ -1,10 +1,19 @@
-function item(item, href, src ) {
-    const i = document.createElement(item);
-    i.defer = true;
-    i.href = href || '';
-    i.src = src || '';
-    document.head.appendChild(i);
-}
+// const i = document.createElement(item);
+// i.defer = true;
+// i.href = href || '';
+// i.src = src || '';
+// document.head.appendChild(i);
 
-item('link', 'https://cdn.jsdelivr.net/npm/melte@latest/src/css/utility.css');
-item('link', 'https://cdn.jsdelivr.net/npm/melte@latest/src/css/base.css');
+// https://www.hannesscript.dev/software/melte/code/src/css/
+
+const utility = document.createElement('link');
+utility.href = 'https://www.hannesscript.dev/software/melte/code/src/css/utility.css';
+utility.rel = 'stylesheet'
+utility.defer = true;
+document.head.appendChild(utility);
+
+const base = document.createElement('link');
+base.href = 'https://www.hannesscript.dev/software/melte/code/src/css/base.css';
+base.rel = 'stylesheet'
+base.defer = true;
+document.head.appendChild(base);

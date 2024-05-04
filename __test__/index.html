@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<script>
-$(document).on("pagecreate","body",function(){
-  $("p").swipe(() => {
-    $("span").text("Swipe detected!");
-  });                       
-});
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+  <script defer src="https://www.hannesscript.dev/software/melte/code/init.js"></script>
 </head>
-<body>
-    <p>Swipe this text or in the box below.</p>
-    <p style="border:1px solid black;height:200px;width:200px;"></p>
-    <p><span style="color:red"></span></p>
+<body class="bg-gray-600 text-white">
+    <header class="bg-gray-800 p-8 pl-64 pr-32 flex align-center justify-start gap-64">
+      <h1>Header</h1>
+      <p>Lorem ipsum dolor sit amet consectetur</p>
+    </header>
 </body>
 </html>

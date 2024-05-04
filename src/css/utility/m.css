@@ -79,3 +79,27 @@
 .m-32 {
     margin: 32px;
 }
+
+.m-64 {
+    margin: 64px;
+}
+
+.m-128 {
+    margin: 128px;
+}
+
+.ml-64 {
+    margin-left: 64px;
+}
+
+.ml-128 {
+    margin-left: 128px;
+}
+
+.mr-64 {
+    margin-right: 64px;
+}
+
+.mr-128 {
+    margin-right: 128px;
+}

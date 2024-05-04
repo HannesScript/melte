@@ -78,3 +78,35 @@
 .pb-32 {
     padding-bottom: 32px;
 }
+
+.pl-64 {
+    padding-left: 64px;
+}
+
+.pr-64 {
+    padding-right: 64px;
+}
+
+.pt-64 {
+    padding-top: 64px;
+}
+
+.pb-64 {
+    padding-bottom: 64px;
+}
+
+.pl-128 {
+    padding-left: 128px;
+}
+
+.pr-128 {
+    padding-right: 128px;
+}
+
+.pt-128 {
+    padding-top: 128px;
+}
+
+.pb-128 {
+    padding-bottom: 128px;
+}
