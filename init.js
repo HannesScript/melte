@@ -7,3 +7,4 @@ function item(item, href, src ) {
 }
 
 item('link', 'https://cdn.jsdelivr.net/npm/melte@latest/src/css/utility.css');
+item('link', 'https://cdn.jsdelivr.net/npm/melte@latest/src/css/base.css');
