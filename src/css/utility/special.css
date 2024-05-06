@@ -9,3 +9,45 @@
     opacity: 0.3;
     pointer-events: none;
 }
+
+/* @media (width<550px) {
+     .handy-only {
+        display: block;
+    }
+
+    .computer-only {
+        display: none;
+    }
+
+    .tablet-only {
+        display: none;
+    }
+}
+
+@media (width<880px) {
+    .tablet-only {
+        display: block;
+    }
+
+    .computer-only {
+        display: none;
+    }
+
+    .handy-only {
+        display: none;
+    }
+}
+
+@media (width>950px) {
+    .computer-only {
+        display: block;
+    }
+
+    .tablet-only {
+        display: none;
+    }
+
+    .handy-only {
+        display: none;
+    }
+} */

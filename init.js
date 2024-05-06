@@ -6,14 +6,36 @@
 
 // https://www.hannesscript.dev/software/melte/code/src/css/
 
-const utility = document.createElement('link');
-utility.href = 'https://www.hannesscript.dev/software/melte/code/src/css/utility.css';
-utility.rel = 'stylesheet'
-utility.defer = true;
-document.head.appendChild(utility);
+function loadJS() {
+    const folder =  'https://www.hannesscript.dev/software/melte/' + 'src/js';
+    var scripts = document.getElementsByTagName("script");
+    var folderPath = folder + "/";
+    var jsFiles = ["attr.js"];
 
-const base = document.createElement('link');
-base.href = 'https://www.hannesscript.dev/software/melte/code/src/css/base.css';
-base.rel = 'stylesheet'
-base.defer = true;
-document.head.appendChild(base);
+    for (var i = 0; i < jsFiles.length; i++) {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = folderPath + jsFiles[i];
+        script.defer = true;
+        document.head.appendChild(script);
+    }
+}
+
+function loadCSS() {
+    const folder =  'https://www.hannesscript.dev/software/melte/' + 'src/css';
+    var links = document.getElementsByTagName("link");
+    var folderPath = folder + "/";
+    var cssFiles = ["utility.css", "base.css"];
+
+    for (var i = 0; i < cssFiles.length; i++) {
+        var link = document.createElement("link");
+        link.type = "text/css";
+        link.href = folderPath + cssFiles[i];
+        link.rel = 'stylesheet';
+        link.defer = true;
+        document.head.appendChild(link);
+    }
+}
+
+loadCSS();
+loadJS();
