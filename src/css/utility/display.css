@@ -88,6 +88,10 @@
     flex-direction: column-reverse;
 }
 
+.flex-1 {
+    flex: 1;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
@@ -138,6 +142,10 @@
 
 .align-end {
     align-items: flex-end;
+}
+
+.align-top {
+    align-items: top;
 }
 
 .gap-1 {

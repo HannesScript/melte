@@ -1,16 +1,17 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar from './Navbar';
+import Docs from './pages/docs';
 
 function App() {
   return (
     <>
       <Router>
-        <div className='bg-gray-600 p-0 m-0 text-white'>
-          <Navbar />
-          <Routes>
-            <Route path='/' element={<><h1>Home</h1></>} />
-          </Routes>
-        </div>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<><h1>Home</h1></>} />
+          <Route path='/docs' element={<> <Docs /> </>} />
+          <Route path='/components' element={<><h1>Components</h1></>} />
+        </Routes>
       </Router>
     </>
   )

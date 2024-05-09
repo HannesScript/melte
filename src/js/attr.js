@@ -57,7 +57,7 @@ document.querySelectorAll('[melte-clicked]').forEach(element => {
                 classes.forEach(el => {
                     element.classList.remove(el);
                 });
-            }, 150);
+            }, 100);
         }
     });
 });
