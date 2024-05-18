@@ -32,8 +32,8 @@ function Docs(props) {
                         <div className="bg-red-800 p-8 pl-32 pr-32 br-4">
                             <h1>Note!</h1>
                             <h2 className="flex align-center">
-                                You can't change <span className="text-gray-300">bg</span> with the current version of Melte!&nbsp;
-                                <span className="text-size-lg text-gray-300"> (I will fix it soon...)</span>
+                                You can't change&nbsp;<span className="text-gray-300">bg</span>&nbsp;with the current version of Melte!&nbsp;
+                                <span className="text-size-lg text-gray-300">(I will fix it soon...)</span>
                             </h2>
                             <h4>
                                 For example: <span className="text-blue-500">&lt;element&nbsp;
