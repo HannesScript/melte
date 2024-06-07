@@ -1,0 +1,11 @@
+.poniter {
+    cursor: pointer;
+}
+
+.wait {
+    cursor: wait;
+}
+
+.progress {
+    cursor: progress;
+}

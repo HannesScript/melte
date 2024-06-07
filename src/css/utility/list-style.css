@@ -1,0 +1,35 @@
+.list-none {
+    list-style: none;
+}
+
+.list-disc {
+    list-style: disc;
+}
+
+.list-armenian {
+    list-style: armenian;
+}
+
+.list-decimal {
+    list-style: decimal;
+}
+
+.list-zero-decimal {
+    list-style: decimal-leading-zero;
+}
+
+.list-dash {
+    list-style: "- ";
+}
+
+.list-hyphen {
+    list-style: "- ";
+}
+
+.list-none {
+    list-style: none;
+}
+
+.list-none {
+    list-style: none;
+}

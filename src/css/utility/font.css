@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.font-noto-sans-jp {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.font-sans-serif {
+    font-family: sans-serif;
+}
+
+.font-serif {
+    font-family: serif;
+}
+
+.font-arial {
+    font-family: Arial, sans-serif;
+}
+
+.font-helvetica {
+    font-family: Helvetica, sans-serif;
+}
+
+.font-system {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.font-open-sans {
+    font-family: "Open Sans", sans-serif;
+}
+
+.font-monospace {
+    font-family: monospace, sans-serif;
+}
+
+.font-roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+.font-seoge-ui {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-liberation-sans {
+    font-family: "Liberation Sans", Arial, sans-serif;
+}

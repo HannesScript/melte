@@ -365,3 +365,7 @@
 .bg-orange-900 {
     background-color: #E65100;
 }
+
+.bg-none {
+    background: transparent;
+}

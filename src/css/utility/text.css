@@ -14,44 +14,76 @@
     color: #000000;
 }
 
-.text-gray-50 {
-    color: #f9fafb;
+.text-grey-100 {
+    color: #999999;
+}
+
+.text-grey-200 {
+    color: #888888;
+}
+
+.text-grey-300 {
+    color: #777777;
+}
+
+.text-grey-400 {
+    color: #666666;
+}
+
+.text-grey-500 {
+    color: #555555;
+}
+
+.text-grey-600 {
+    color: #444444;
+}
+
+.text-grey-700 {
+    color: #333333;
+}
+
+.text-grey-800 {
+    color: #222222;
+}
+
+.text-grey-900 {
+    color: #111111;
 }
 
 .text-gray-100 {
-    color: #f3f4f6;
+    color: #999999;
 }
 
 .text-gray-200 {
-    color: #e5e7eb;
+    color: #888888;
 }
 
 .text-gray-300 {
-    color: #d1d5db;
+    color: #777777;
 }
 
 .text-gray-400 {
-    color: #9ca3af;
+    color: #666666;
 }
 
 .text-gray-500 {
-    color: #6b7280;
+    color: #555555;
 }
 
 .text-gray-600 {
-    color: #4b5563;
+    color: #444444;
 }
 
 .text-gray-700 {
-    color: #374151;
+    color: #333333;
 }
 
 .text-gray-800 {
-    color: #1f2937;
+    color: #222222;
 }
 
 .text-gray-900 {
-    color: #111827;
+    color: #111111;
 }
 
 .text-red-50 {

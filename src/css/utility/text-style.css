@@ -1,0 +1,15 @@
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.normal {
+    font-style: normal;
+}

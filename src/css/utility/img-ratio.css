@@ -1,0 +1,23 @@
+.img-ration-1\:1 {
+    aspect-ratio: 1 / 1;
+}
+
+.img-ration-4\:3 {
+    aspect-ratio: 4 / 3;
+}
+
+.img-ration-16\:9 {
+    aspect-ratio: 16 / 9;
+}
+
+.img-ration-9\:16 {
+    aspect-ratio: 9 / 16;
+}
+
+.img-ration-3\:2 {
+    aspect-ratio: 3 / 2;
+}
+
+.img-ration-21\:9 {
+    aspect-ratio: 21 / 9;
+}

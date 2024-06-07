@@ -1,0 +1,35 @@
+.img-xs {
+    height: 2.5rem;
+}
+
+.img-sm {
+    height: 4rem;
+}
+
+.img-md {
+    height: 8rem;
+}
+
+.img-lg {
+    height: 12rem;
+}
+
+.img-xl {
+    height: 16rem;
+}
+
+.img-xxl {
+    height: 24rem;
+}
+
+.img-2xxl {
+    height: 32rem;
+}
+
+.img-3xxl {
+    height: 48rem;
+}
+
+.img-4xxl {
+    height: 64rem;
+}

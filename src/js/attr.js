@@ -14,18 +14,18 @@ function setEventListeners() {
     // melte-hover
     document.querySelectorAll('[melte-hover]').forEach(element => {
         element.addEventListener('mouseenter', () => {
-            const hoverClasses = element.getAttribute('melte-hover');
-            const classes = hoverClasses.split(' ');
-            if (hoverClasses) {
+            const overwriteclasses = element.getAttribute('melte-hover');
+            const classes = overwriteclasses.split(' ');
+            if (overwriteclasses) {
                 classes.forEach(el => {
                     element.classList.add(el);
                 });
             }
         });
         element.addEventListener('mouseleave', () => {
-            const hoverClasses = element.getAttribute('melte-hover')
-            const classes = hoverClasses.split(' ');
-            if (hoverClasses) {
+            const overwriteclasses = element.getAttribute('melte-hover')
+            const classes = overwriteclasses.split(' ');
+            if (overwriteclasses) {
                 classes.forEach(el => {
                     element.classList.remove(el);
                 });
@@ -36,9 +36,9 @@ function setEventListeners() {
     // melte-focus
     document.querySelectorAll('[melte-focus]').forEach(element => {
         element.addEventListener('click', () => {
-            const hoverClasses = element.getAttribute('melte-focus');
-            const classes = hoverClasses.split(' ');
-            if (hoverClasses) {
+            const overwriteclasses = element.getAttribute('melte-focus');
+            const classes = overwriteclasses.split(' ');
+            if (overwriteclasses) {
                 classes.forEach(el => {
                     element.classList.add(el);
                 });
@@ -46,9 +46,9 @@ function setEventListeners() {
         });
 
         element.addEventListener('blur', () => {
-            const hoverClasses = element.getAttribute('melte-focus');
-            const classes = hoverClasses.split(' ');
-            if (hoverClasses) {
+            const overwriteclasses = element.getAttribute('melte-focus');
+            const classes = overwriteclasses.split(' ');
+            if (overwriteclasses) {
                 classes.forEach(el => {
                     element.classList.remove(el);
                 });
@@ -60,9 +60,9 @@ function setEventListeners() {
     // melte-clicked
     document.querySelectorAll('[melte-clicked]').forEach(element => {
         element.addEventListener('mousedown', () => {
-            const hoverClasses = element.getAttribute('melte-clicked');
-            const classes = hoverClasses.split(' ');
-            if (hoverClasses) {
+            const overwriteclasses = element.getAttribute('melte-clicked');
+            const classes = overwriteclasses.split(' ');
+            if (overwriteclasses) {
                 classes.forEach(el => {
                     element.classList.add(el);
                 });
@@ -75,9 +75,9 @@ function setEventListeners() {
         });
 
         element.addEventListener('mouseup', () => {
-            const hoverClasses = element.getAttribute('melte-clicked');
-            const classes = hoverClasses.split(' ');
-            if (hoverClasses) {
+            const overwriteclasses = element.getAttribute('melte-clicked');
+            const classes = overwriteclasses.split(' ');
+            if (overwriteclasses) {
                 classes.forEach(el => {
                     element.classList.remove(el);
                 });
