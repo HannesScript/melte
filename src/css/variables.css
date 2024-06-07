@@ -1,0 +1,5 @@
+:root {
+    --m-clr-dominant: #7b00a0;
+    --m-gradient-shine-darkbg: linear-gradient(145deg, #111111 82%, white 85%, #111111 88%);
+    /* --m-?: ?; */
+}

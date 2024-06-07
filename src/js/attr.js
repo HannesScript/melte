@@ -1,87 +1,126 @@
-const observer = new MutationObserver((mutationsList, observer) => {
-    for (const mutation of mutationsList) {
-        if (mutation.type === 'childList') {
-            setEventListeners();
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new MutationObserver((mutationsList) => {
+        for (const mutation of mutationsList) {
+            if (mutation.type === 'childList') {
+                setEventListeners();
+            }
         }
-    }
+    });
+
+    const config = { childList: true, subtree: true };
+    observer.observe(document.body, config);
+
+    setEventListeners();
 });
 
-const config = { childList: true, subtree: true };
-
-observer.observe(document.body, config);
+const originalClasses = new Map();
+const removedClasses = new Map();
 
 function setEventListeners() {
-    // melte-hover
     document.querySelectorAll('[melte-hover]').forEach(element => {
         element.addEventListener('mouseenter', () => {
-            const overwriteclasses = element.getAttribute('melte-hover');
-            const classes = overwriteclasses.split(' ');
-            if (overwriteclasses) {
-                classes.forEach(el => {
-                    element.classList.add(el);
-                });
-            }
+            handleHover(element, true);
         });
         element.addEventListener('mouseleave', () => {
-            const overwriteclasses = element.getAttribute('melte-hover')
-            const classes = overwriteclasses.split(' ');
-            if (overwriteclasses) {
-                classes.forEach(el => {
-                    element.classList.remove(el);
-                });
-            }
+            handleHover(element, false);
         });
     });
 
-    // melte-focus
     document.querySelectorAll('[melte-focus]').forEach(element => {
-        element.addEventListener('click', () => {
-            const overwriteclasses = element.getAttribute('melte-focus');
-            const classes = overwriteclasses.split(' ');
-            if (overwriteclasses) {
-                classes.forEach(el => {
-                    element.classList.add(el);
-                });
-            }
+        element.addEventListener('focus', () => {
+            handleFocus(element, true);
         });
-
         element.addEventListener('blur', () => {
-            const overwriteclasses = element.getAttribute('melte-focus');
-            const classes = overwriteclasses.split(' ');
-            if (overwriteclasses) {
-                classes.forEach(el => {
-                    element.classList.remove(el);
-                });
-            }
+            handleFocus(element, false);
         });
     });
 
-
-    // melte-clicked
     document.querySelectorAll('[melte-clicked]').forEach(element => {
         element.addEventListener('mousedown', () => {
-            const overwriteclasses = element.getAttribute('melte-clicked');
-            const classes = overwriteclasses.split(' ');
-            if (overwriteclasses) {
-                classes.forEach(el => {
-                    element.classList.add(el);
-                });
-                setTimeout(() => {
-                    classes.forEach(el => {
-                        element.classList.remove(el);
-                    });
-                }, 100);
-            }
+            handleClick(element, true);
         });
-
         element.addEventListener('mouseup', () => {
-            const overwriteclasses = element.getAttribute('melte-clicked');
-            const classes = overwriteclasses.split(' ');
-            if (overwriteclasses) {
-                classes.forEach(el => {
-                    element.classList.remove(el);
-                });
-            }
+            handleClick(element, false);
         });
     });
+}
+
+function handleHover(element, isMouseEnter) {
+    const classes = element.getAttribute('melte-hover')?.split(' ') || [];
+    if (isMouseEnter) {
+        addClasses(element, classes);
+    } else {
+        removeClasses(element, classes);
+    }
+}
+
+function handleFocus(element, isFocused) {
+    const classes = element.getAttribute('melte-focus')?.split(' ') || [];
+    if (isFocused) {
+        addClasses(element, classes);
+    } else {
+        removeClasses(element, classes);
+    }
+}
+
+function handleClick(element, isMouseDown) {
+    const classes = element.getAttribute('melte-clicked')?.split(' ') || [];
+    if (isMouseDown) {
+        addClasses(element, classes);
+    } else {
+        removeClasses(element, classes);
+    }
+}
+
+function addClasses(element, classes) {
+    if (!originalClasses.has(element)) {
+        originalClasses.set(element, new Set(element.classList));
+    }
+    if (!removedClasses.has(element)) {
+        removedClasses.set(element, []);
+    }
+    classes.forEach(cls => {
+        if (cls.includes("bg")) {
+            addClass(element, cls);
+        } else {
+            element.classList.add(cls);
+        }
+    });
+}
+
+function removeClasses(element, classes) {
+    classes.forEach(cls => {
+        if (cls.includes("bg")) {
+            removeClass(element, cls);
+        } else {
+            element.classList.remove(cls);
+        }
+    });
+
+    // Re-add original classes that were removed
+    if (originalClasses.has(element)) {
+        originalClasses.get(element).forEach(cls => element.classList.add(cls));
+        originalClasses.delete(element);
+    }
+}
+
+function addClass(element, cls) {
+    const elementRemovedClasses = removedClasses.get(element);
+    element.classList.forEach(currClass => {
+        if (currClass.includes("bg")) {
+            element.classList.remove(currClass);
+            elementRemovedClasses.push(currClass);
+        }
+    });
+    element.classList.add(cls);
+    removedClasses.set(element, elementRemovedClasses);
+}
+
+function removeClass(element, cls) {
+    const elementRemovedClasses = removedClasses.get(element);
+    element.classList.remove(cls);
+    if (elementRemovedClasses.includes(cls)) {
+        element.classList.add(cls);
+        removedClasses.set(element, elementRemovedClasses.filter(item => item !== cls));
+    }
 }

@@ -1,4 +1,5 @@
 .content-center {
-    padding: 0 30dvw;
+    padding-left: 30dvw;
+    padding-right: 30dvw;
     width: 100dvw;
 }

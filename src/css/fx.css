@@ -1,0 +1,27 @@
+/* Shine */
+.fx-shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.fx-shine>.shine {
+    position: absolute;
+    top: 0;
+    height: 200%;
+    left: -100px;
+    width: 30%;
+    background: linear-gradient(to bottom right, transparent 35%, white, transparent 50%);
+    -webkit-text-fill-color: transparent;
+    animation: shine 5.5s ease-in-out infinite;
+    overflow: hidden;
+}
+
+@keyframes shine {
+    0% {
+        left: -200%;
+    }
+
+    100% {
+        left: 110%
+    }
+}
