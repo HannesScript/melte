@@ -1,16 +1,16 @@
-.b-none {
+.border-none {
     border: none;
 }
 
-.b-color-blue {
+.border-color-blue {
     border-color: #0077ff;
 }
 
-.b-solid {
+.border-solid {
     border-style: solid;
 }
 
-.b-vite:hover {
+.border-vite:hover {
     border: 2px solid #0077ff;
     transition: border 0.2s ease;
 }

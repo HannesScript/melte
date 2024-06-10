@@ -80,7 +80,7 @@ function addClasses(element, classes) {
         removedClasses.set(element, []);
     }
     classes.forEach(cls => {
-        if (cls.includes("bg")) {
+        if (cls.includes("bg") || cls.includes("border") || cls.includes("line") || cls.includes("text") || cls.includes("list")) {
             addClass(element, cls);
         } else {
             element.classList.add(cls);
@@ -90,7 +90,7 @@ function addClasses(element, classes) {
 
 function removeClasses(element, classes) {
     classes.forEach(cls => {
-        if (cls.includes("bg")) {
+        if (cls.includes("bg") || cls.includes("border") || cls.includes("line") || cls.includes("text") || cls.includes("list")) {
             removeClass(element, cls);
         } else {
             element.classList.remove(cls);

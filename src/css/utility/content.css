@@ -3,3 +3,11 @@
     padding-right: 30dvw;
     width: 100dvw;
 }
+
+@media (width<550px) {
+    .content-center {
+        padding-left: 6dvw;
+        padding-right: 6dvw;
+        width: 100dvw;
+    }
+}

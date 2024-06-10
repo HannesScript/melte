@@ -1,4 +1,4 @@
-.poniter {
+.pointer {
     cursor: pointer;
 }
 
@@ -8,4 +8,8 @@
 
 .progress {
     cursor: progress;
+}
+
+.not-allowed {
+    cursor: not-allowed;
 }

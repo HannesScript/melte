@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script defer type="module">
+            import meltelytics from "./main.js";
+
+            async function initializeAnalytics() {
+                const analytics = meltelytics("test.com::GEwqtPsnWvtDF63DIqvd");
+                await analytics.init();
+
+                // Test the functions
+                analytics.viewed();
+            }
+
+            initializeAnalytics();
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

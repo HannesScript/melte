@@ -1,7 +1,8 @@
 {
   "name": "melte",
-  "version": "2.0.0-next.11",
+  "version": "2.0.0",
   "description": "",
+  "type": "module",
   "main": "main.js",
   "scripts": {},
   "author": "HannesScript",
